@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+    <Button
+        android:id="@+id/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="617dp"
+        android:onClick="OnOff"
+        android:text="Activer/Dsactiver Bluetooth" />
+    -->
+
+
+    <Switch
+        android:id="@+id/btn_blt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="135dp"
+        android:layout_marginBottom="475dp"
+        android:onClick="OnOff"
+        android:text="Bluetooth" />
+
+    <Button
+        android:id="@+id/btn_disc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="600dp"
+        android:onClick="btnDiscover"
+        android:text="Scanner les appareils autour" />
+
+    <Button
+        android:id="@+id/bn_discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="526dp"
+        android:onClick="btnEnableDisable_Discoverable"
+        android:text="Activer la détection" />
+
+    <ListView
+        android:id="@+id/LvNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="298dp" >
+
+    </ListView>
+
+</RelativeLayout>
